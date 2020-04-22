@@ -101,7 +101,7 @@ def launch(command):
     """Launch command"""
     def launcher():
         from subprocess import Popen
-        Popen(command)
+        Popen(command, shell=True)
     return launcher
 
 
